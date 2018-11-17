@@ -18,6 +18,7 @@ Release:	18.04 <br />
 Codename:	bionic <br />
 
 <br />
+
 ## CPU
 Architecture:        x86_64 <br/>
 CPU op-mode(s):      32-bit, 64-bit <br/>
