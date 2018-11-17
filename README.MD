@@ -8,20 +8,20 @@ As a result I ended up compiling tf on that machine to make sure I had a version
 
 My specs: 
 
-Architecture:        x86_64
-CPU op-mode(s):      32-bit, 64-bit
-Byte Order:          Little Endian
-CPU(s):              4
-On-line CPU(s) list: 0-3
-Thread(s) per core:  1
-Core(s) per socket:  4
-Socket(s):           1
-NUMA node(s):        1
-Vendor ID:           GenuineIntel
-CPU family:          6
-Model:               26
-Model name:          Intel(R) Xeon(R) CPU           W3580  @ 3.33GHz
-Stepping:            5
+Architecture:        x86_64 <br/>
+CPU op-mode(s):      32-bit, 64-bit <br/>
+Byte Order:          Little Endian<br/>
+CPU(s):              4<br/>
+On-line CPU(s) list: 0-3<br/>
+Thread(s) per core:  1<br/>
+Core(s) per socket:  4<br/>
+Socket(s):           1<br/>
+NUMA node(s):        1<br/>
+Vendor ID:           GenuineIntel<br/>
+CPU family:          6<br/>
+Model:               26<br/>
+Model name:          Intel(R) Xeon(R) CPU           W3580  @ 3.33GHz<br/>
+Stepping:            5<br/>
 CPU MHz:             1640.898
 CPU max MHz:         3326.0000
 CPU min MHz:         1596.0000
