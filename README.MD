@@ -46,7 +46,9 @@ NUMA node0 CPU(s):   0-3<br/>
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida flush_l1d
 
 <br />
+
 # Other stuff about running tf on old hardware: 
+
 <br />
 My old computer also happens to have a graphics card. (nvidia quadro fx 3800)
 Note that official tf build supports compute capability 3.5 and higher. 
@@ -58,12 +60,17 @@ https://developer.nvidia.com/cuda-gpus
 For older cards (like mine) see: 
 https://developer.nvidia.com/cuda-legacy-gpus 
 <br/>
+
 # A question I had, and found the answer to:
+
 <br/>
+
 ## If you can compile TF for older CPUs can I compile it for an older gpu (with compute capability < 3.0)?
 
 ### TL;DR: No. The libs that TF uses under the hood make this impossible. 
+
 <br/>
+
 ### Long answer:
 
 Tensorflow uses an Nvidia lib called cuDNN to take advantage of a GPU. (See https://developer.nvidia.com/cudnn). One of the first steps in installing the GPU version of tensorflow is getting this lib. The problem is that this lib requires compute capability 3.0 or higher. Since TF was written using cuDNN, you're going to need a new card. 
